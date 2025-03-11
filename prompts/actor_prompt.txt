@@ -1,0 +1,28 @@
+Here is your reference project information: 
+"background": {background},
+"problems": {problems},
+"goal": {goal}
+
+The definition of actor: Actors are individuals or groups who can influence the outcome by enabling or obstructing the goal.
+
+Writing tips: 
+1. only return the JSON result, no other text
+2. List all possible actors based on their roles. Then select the two most influential ones who will have the greatest impact on achieving the goal. 
+3. Actor should be general like "Users", "Developers", "Product Manager", "Documentation Team", "DevOps Engineer", "System Administrator", "Project Maintainer", etc.
+4. check the json format is correct and can be parsed by the json.loads function
+
+Please generate 2 most possible concrete actors that are logically aligned with the goal and return the result in the following JSON format strictly, only return the JSON result, no other text:
+{
+    "goal": "goal",
+    "actors": [
+      {
+        "actor_id": "A1",
+        "actor_name": "actor_name"
+      },
+      {
+        "actor_id": "A2",
+        "actor_name": "actor_name"
+      },
+      ...
+    ]
+}

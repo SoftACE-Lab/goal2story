@@ -1,0 +1,62 @@
+Definitions:
+Goal: The goal defines the purpose of the initiative by answering why we are doing this.
+Actors: Actors are individuals or groups who can influence the outcome by enabling or obstructing the goal.
+Impacts: Impacts describe the behavioral changes needed from the actors to achieve the goal or potential obstacles they might create.
+Deliverables: Deliverables are the specific features or activities implemented to support the required impacts.
+User Story: A user story is a concise requirement that describes an actor’s action and the expected outcome within a system.
+
+
+Here is your reference information: 
+"background": {background},
+"problems": {problems},
+"goal": {goal}
+
+Your reasoning process should be:
+step 1. consider 2 most possible actors based on their roles (users, stakeholders, developers, product manager, documentation team, etc.) that are related to the goal.
+step 2. consider 2 most possible impacts for each actor
+step 3. consider 2 most possible deliverable for each impact of each actor
+step 4. generate corresponding user story for each deliverable. Please consider that the actor in the user story may be different from the actor before. Action should be a complete sentence.
+step 5. generate the result in the following json format only, you should not output your reasoning process.
+
+---
+Please consider all the 8 possible user stories that logically aligned with the goal and your reasoning process step-by-step and then generate the user stories result in the following json format only:
+{
+  "goal": "goal",
+  "actors": [
+    {
+      "actor_id": "A1",
+      "actor_name": "Actor name",
+      "impacts": [
+        {
+          "impact_id": "I1",
+          "impact_description": "Impact description",
+          "deliverables": [
+            {
+              "deliverable_id": "D1",
+              "deliverable_description": "deliverable description",
+              "user_story": {
+                "story_id": "US1",
+                "actor": "actor name",
+                "action": "action name",
+                "expected_output": "expected_output"
+              }
+            },
+            {
+              "deliverable_id": "D2",
+              "deliverable_description": "deliverable description",
+              "user_story": {
+                "story_id": "US2",
+                "actor": "actor name",
+                "action": "action name",
+                "expected_output": "expected_output"
+              }
+            },
+            ...
+          ]
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}

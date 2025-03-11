@@ -1,0 +1,9 @@
+pandas
+numpy
+colorama
+argparse
+openai
+dotenv
+scikit-learn
+sentence-transformers
+pathlib

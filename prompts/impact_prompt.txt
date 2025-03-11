@@ -1,0 +1,30 @@
+Here is your reference project information: 
+"background": {background},
+"problems": {problems},
+"goal": {goal}
+"actor": {actor}
+
+The definition of impact: Impacts describe the behavioral changes needed from the actors to achieve the goal or potential obstacles they might create. Impacts must be expressed as a change in behavior or action.
+
+Writing tips: 
+1. only return the JSON result, no other text
+2. check the json format is correct and can be parsed by the json.loads function
+
+
+Please generate 2 possible impacts for this actor that are logically aligned with the goal. 
+Please return the result in the following JSON format strictly, only return the JSON result, no other text:
+{
+  "goal": "Goal",
+  "actor": {
+      "actor_id": "A1",
+      "actor_name": "Github Runner Developer"
+    },
+  "impacts": [
+    {
+      "impact_id": "I1",
+      "impact_name": "Refactor the existing codebase to isolate and modularize the logic responsible for generating temporary file paths."
+    },
+    ...
+  ]
+  
+} 

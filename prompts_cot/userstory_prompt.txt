@@ -1,0 +1,47 @@
+Here is your reference project information: 
+"background": {background},
+"problems": {problems},
+"goal": {goal}
+"actor": {actor}
+"impact": {impact}
+"deliverable": {deliverable}
+
+Here is the definition of user story: A user story is a concise requirement that describes an actor’s action and the expected outcome.
+
+Writing tips:
+1. only return the JSON result, no other text
+2. actor in the user stories: should be the name of the actor, and the actor in the user story may be different from the actor before. actor should be general such as "Users", "Developers", "Product Manager", "Documentation Team", "DevOps Engineer", "System Administrator", "Project Maintainer", etc.
+3. action: should start with a verb (CRUD operations, internal operations, business operations, search operations, etc.) and should be a complete sentence.
+4. expected_output: Explain the purpose or expected outcome of performing this action.
+5. check the json format is correct and can be parsed by the json.loads function
+
+Example:
+"actor": "GitLab Backend Engineer",
+"action": "update the GitLab CI API to allow setting the 'active' attribute to false during runner registration",
+"expected_output": "users can register runners in an inactive state, improving control over runner activation and deployment workflows."
+
+Please generate the corresponding user story for each deliverable that are logically aligned with the goal, actor, impact and deliverable. Please return the result in the following JSON format, only return the JSON result, no other text:
+{
+  "goal": "Goal",
+  "actor": {
+      "actor_id": "A1",
+      "actor_name": "actor_name"
+    },
+  "impacts": {
+      "impact_id": "I1",
+      "impact_name": "impact_name"
+    },
+  "deliverables": [
+    {
+      "deliverable_id": "D1",
+      "deliverable_name": "deliverable_name",
+      "user_story": {
+            "story_id": "US1",
+            "actor": "actor_name",
+            "action": "action",
+            "expected_output": "expected_output"
+        }
+    },
+    ...
+  ]
+}

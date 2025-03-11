@@ -1,0 +1,13 @@
+Here is the goal: {goal}
+Here is the user story:
+As the {actor}
+I want to {action}
+So that {expected_outcome}
+
+Here are the criterias:
+Syntactic: a user story must include elements of actor (can be a person, a group, or an organization), action, and expected_outcome, and contain no extra comments.
+Semantic: a user story must define the intended function and impact, focus on the problem, and avoid any ambiguous terms.
+Pragmatic: a user story must be a complete sentence that can be estimated for planning.
+Goal-related: a user story must be logically aligned with the goal, please remember that the relatedness could be indirect.
+
+Please validate the user story based on the criterias, if the user story meets every criteria, return 1, otherwise return the failed criteria name without other words.

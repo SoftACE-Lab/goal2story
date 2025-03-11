@@ -1,0 +1,32 @@
+Here is your reference project information: 
+"background": {background},
+"problems": {problems},
+"goal": {goal}
+"actor": {actor}
+"impact": {impact}
+
+The definition of deliverable: Deliverables are the specific features or activities implemented to support the required impacts.
+
+Writing tips: 
+1. only return the JSON result, no other text
+2. check the json format is correct and can be parsed by the json.loads function
+
+Please generate 2 possible deliverables that are logically aligned with the goal, actor and impact. Please return the result in the following JSON format strictly, only return the JSON result, no other text:
+{
+  "goal": "goal",
+  "actor": {
+      "actor_id": "A1",
+      "actor_name": "actor_name"
+    },
+  "impacts": {
+      "impact_id": "I1",
+      "impact_name": "impact_name"
+    },
+  "deliverables": [
+    {
+      "deliverable_id": "D1",
+      "deliverable_name": "deliverable_name"
+    },
+    ...
+  ]
+} 
