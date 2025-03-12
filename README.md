@@ -6,7 +6,7 @@
 
 This is the repository for the Goal2Story project proposed in the paper *Goal2Story: A Multi-Agents Fleet based on Privately Enabled sLLMs for Impacting Mapping on Requirements Elicitation*. Goal2Story is a project designed to implement goal-driven requirements elicitation using a multi-agents fleet with small LLMs. The project involves experiments with different models and techniques to improve the quality and reliability of generated user stories. The evaluation is conducted using metrics such as Factual Hit Rate (FHR) and Custom Quality User Story (CQUS). The dataset of this project is from [StorySeek](https://huggingface.co/datasets/SoftACE/StorySeek) and the dataset is used for the evaluation of the project and further research and industry applications.
 
-** StorySeek Dataset: **: <https://huggingface.co/datasets/SoftACE/StorySeek>
+**StorySeek Dataset**: <https://huggingface.co/datasets/SoftACE/StorySeek>
 
 ## Directory Structure
 
